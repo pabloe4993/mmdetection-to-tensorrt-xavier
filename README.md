@@ -21,13 +21,7 @@ This project is released under the [Apache 2.0 license](LICENSE).
 
 ## Requirement
 
-- install mmdetection:
 
-    ```bash
-    # mim is so cool!
-    pip install openmim
-    mim install mmdet==2.14.0
-    ```
 - install torchvision >=0.9.0:
     ```bash
     pip install torchvision
@@ -45,6 +39,13 @@ This project is released under the [Apache 2.0 license](LICENSE).
     pip install pycocotools
     pip install terminaltables
     ``` 
+- install mmdetection (openmim - not working on Jetson - jump to "install mmdetection from source"):
+
+    ```bash
+    # mim is so cool!
+    pip install openmim
+    mim install mmdet==2.14.0
+    ```
 - install mmdetection from source:
     ```bash
     git clone https://github.com/open-mmlab/mmdetection.git
