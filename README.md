@@ -28,6 +28,41 @@ This project is released under the [Apache 2.0 license](LICENSE).
     pip install openmim
     mim install mmdet==2.14.0
     ```
+- install torchvision >=0.9.0:
+    ```bash
+    pip install torchvision
+    ```
+    or (from source):
+    ```bash
+    git clone https://github.com/pytorch/vision.git
+    cd vision
+    git checkout v0.10.0
+    python setup.py install
+    ```
+
+- install dependencies:
+    ```bash
+    pip install pycocotools
+    pip install terminaltables
+    ``` 
+- install mmdetection from source:
+    ```bash
+    git clone https://github.com/open-mmlab/mmdetection.git
+    cd mmdetection
+    # clone mmcv
+    git clone https://github.com/open-mmlab/mmcv.git
+    cd mmcv
+    git checkout v.1.3.8
+    MMCV_WITH_OPS=1 pip install -e .
+    cd ..
+    
+    ```
+    
+   Modify setup.py file, log out of opencv-python version download
+   
+    ```bash
+    pip install -v -e . 
+    ```
 
 - install [torch2trt_dynamic](https://github.com/grimoire/torch2trt_dynamic):
 
